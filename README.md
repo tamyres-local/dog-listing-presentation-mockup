@@ -4,7 +4,7 @@ An interactive product/UX concept for improving Dogs Mobile Grooming groomer-det
 
 ## Live demo
 
-**https://clovergrowth.github.io/dog-listing-presentation-mockup/**
+**https://tamyres-local.github.io/dog-listing-presentation-mockup/**
 
 ## Concepts included
 
