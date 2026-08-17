@@ -24,19 +24,21 @@ button,a{font:inherit} button{cursor:pointer}.shell{min-height:100vh}.topbar{pos
 .v2 .hero-split{display:grid;grid-template-columns:1.2fr .8fr;min-height:420px}.canvas.mobile .hero-split{display:block}.v2 .photo{min-height:420px}.canvas.mobile.v2 .photo{min-height:300px}.v2 .hero-panel{padding:28px;background:#fff}.canvas.mobile.v2 .hero-panel{padding:17px}.v2 .hero-panel h1{font-size:32px;line-height:1.05;margin:0 0 8px}.canvas.mobile.v2 .hero-panel h1{font-size:25px}.v2 .quick-actions{display:grid;gap:8px;margin-top:18px}.v2 .status-line{border-left:4px solid var(--green);padding:10px 12px;background:#f1f8f5;margin:14px 0}.v2 .content-single{max-width:850px;margin:18px auto}.v2 .actionbar{display:flex;gap:10px;position:sticky;top:70px;background:#f7f4ed;padding:12px 0;z-index:4}.canvas.mobile.v2 .actionbar{display:none}
 /* Variant three */
 .v3 .compact-hero{display:grid;grid-template-columns:260px 1fr;min-height:250px;background:#fff}.canvas.mobile.v3 .compact-hero{display:block}.v3 .compact-hero .photo{min-height:250px;border-radius:18px 0 0 18px}.canvas.mobile.v3 .compact-hero .photo{min-height:220px;border-radius:18px 18px 0 0}.v3 .hero-info{padding:24px}.canvas.mobile.v3 .hero-info{padding:16px}.v3 .hero-info h1{font-size:30px;margin:0 0 5px}.canvas.mobile.v3 .hero-info h1{font-size:24px}.compare-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:16px 0}.canvas.mobile .compare-grid{grid-template-columns:1fr 1fr}.compare{padding:15px;border-radius:14px;background:#fff;border:1px solid #dce2dd}.compare .state{font-size:11px;font-weight:850;text-transform:uppercase}.compare .answer{font-size:16px;font-weight:800;margin:7px 0}.compare .evidence{font-size:11px;color:#708079}.tri-unknown{border-style:dashed}.v3 .layout3{display:grid;grid-template-columns:1fr 310px;gap:18px}.canvas.mobile.v3 .layout3{display:block}
+/* Variant four: research-informed recommendation */
+.v4 .decision-hero{display:grid;grid-template-columns:360px minmax(0,1fr);min-height:330px;background:#fff}.canvas.mobile.v4 .decision-hero{display:block}.v4 .decision-hero .photo{min-height:330px;border-radius:18px 0 0 18px}.canvas.mobile.v4 .decision-hero .photo{min-height:240px;border-radius:18px 18px 0 0}.decision-summary{padding:28px}.canvas.mobile.v4 .decision-summary{padding:17px}.decision-summary h1{font-size:34px;line-height:1.05;margin:9px 0 6px}.canvas.mobile.v4 .decision-summary h1{font-size:25px}.decision-summary .button-row{margin-top:18px}.decision-meta{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0}.decision-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:16px 0}.canvas.mobile.v4 .decision-grid{grid-template-columns:1fr 1fr}.decision-card{min-width:0;padding:14px;border:1px solid #dce2dd;border-radius:14px;background:#fff}.decision-card.unknown-card{border-style:dashed;background:#fafafa}.decision-status{font-size:10px;font-weight:850;letter-spacing:.055em;text-transform:uppercase;color:var(--green)}.unknown-card .decision-status{color:#6f7974}.decision-value{font-weight:820;margin:7px 0 3px}.decision-evidence{font-size:11px;color:#687872}.decision-layout{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:20px}.canvas.mobile.v4 .decision-layout{display:block}.unknown-list{display:grid;gap:9px}.unknown-row{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px;border:1px dashed #ccd3ce;border-radius:12px}.unknown-row span:first-child{font-weight:760}.alternative-list{display:grid;grid-template-columns:1fr 1fr;gap:10px}.canvas.mobile.v4 .alternative-list{grid-template-columns:1fr}.alternative{padding:14px;border:1px solid #dfe4e0;border-radius:13px}.alternative h4{margin:0 0 7px}.alternative p{font-size:12px;margin:5px 0}.research-note{border-left:4px solid var(--green);background:#edf7f3;padding:12px 14px;border-radius:0 12px 12px 0;margin-top:14px;font-size:13px}
 /* modal */
 .modal{position:fixed;inset:0;background:rgba(8,20,16,.65);z-index:50;display:none;place-items:center;padding:20px}.modal.open{display:grid}.dialog{width:min(610px,100%);max-height:90vh;max-height:90dvh;overflow:auto;overscroll-behavior:contain;background:#fff;border-radius:20px;padding:24px;box-shadow:0 24px 80px rgba(0,0,0,.4)}.dialog h2{margin:0 0 5px}.dialog p{color:#5e6d68}.close{float:right;border:0;background:#edf0ed;width:44px;height:44px;border-radius:50%}.field{margin:13px 0}.field label{font-weight:750;font-size:13px;display:block;margin-bottom:5px}.field input,.field select,.field textarea{width:100%;min-height:44px;padding:11px;border:1px solid #cbd3ce;border-radius:10px;background:#fff}.field textarea{height:90px}.notice{font-size:12px;padding:10px;background:#f2f5f2;border-radius:10px;color:#53645e}.dialog .button-row{margin-top:15px}
 footer{max-width:1400px;margin:18px auto 0;color:#5f6b67;font-size:12px;text-align:center}
 @media(max-width:760px){
-  .topbar{padding:10px 12px}.toprow{display:grid;grid-template-columns:minmax(0,1fr);gap:9px}.brand{font-size:15px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.topnote,.view-toggle{display:none}.tabs{width:100%;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;overflow:visible;padding-bottom:2px}.tabs button{min-width:0;min-height:48px;padding:8px 4px;font-size:12px;line-height:1.15;white-space:normal}
+  .topbar{padding:10px 12px}.toprow{display:grid;grid-template-columns:minmax(0,1fr);gap:9px}.brand{font-size:15px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.topnote,.view-toggle{display:none}.tabs{width:100%;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;overflow:visible;padding-bottom:2px}.tabs button{min-width:0;min-height:48px;padding:8px 3px;font-size:11px;line-height:1.15;white-space:normal}
   .workspace{padding:12px 8px calc(28px + env(safe-area-inset-bottom))}.intro{display:block;margin-bottom:14px;padding:15px;border-radius:14px}.intro h1{font-size:20px;line-height:1.2}.intro p{font-size:13px}.legend{display:grid;grid-template-columns:1fr 1fr;justify-content:stretch;margin-top:12px}.legend .pill{min-width:0;justify-content:center;white-space:normal;text-align:center}
   .variant-head{display:block;margin-bottom:10px;padding:0 4px}.variant-head h2{font-size:23px;line-height:1.15}.variant-head p{font-size:13px}.stance{margin-top:10px;max-width:none}.canvas-wrap{overflow:visible;padding:4px 0 20px}.canvas,.canvas.mobile{width:100%;max-width:390px;border-radius:18px;box-shadow:0 12px 34px rgba(0,0,0,.14)}
   .canvas.mobile .site-head{padding:0 13px}.canvas.mobile .site-logo{font-size:15px;overflow:hidden;text-overflow:ellipsis}.canvas.mobile .breadcrumb{padding-left:13px;padding-right:13px}.canvas.mobile .page{padding-left:12px;padding-right:12px}.canvas.mobile.v1 .photo{height:300px!important}.canvas.mobile .photo-label{max-width:calc(100% - 24px);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.canvas.mobile .section{padding:16px;margin:12px 0}.canvas.mobile .section h3,.canvas.mobile .booking h3{font-size:18px}.canvas.mobile .overlay h1{font-size:24px}.canvas.mobile .rating{align-items:flex-start;flex-wrap:wrap}.canvas.mobile .trust-strip .pill{white-space:normal}.canvas.mobile .compare{padding:12px}
   .variant.active .canvas.mobile .mobile-rail{position:fixed;left:0;right:0;bottom:0;width:100%;max-width:100vw;z-index:40}
   .modal{align-items:end;padding:10px 8px calc(10px + env(safe-area-inset-bottom))}.dialog{width:100%;max-height:calc(100dvh - 20px);border-radius:18px 18px 12px 12px;padding:18px 16px}.dialog h2{font-size:22px}.field input,.field select,.field textarea{font-size:16px}.dialog .button-row{position:sticky;bottom:0;background:#fff;padding-top:8px}
-  footer{padding:0 10px}
+  footer{padding:0 10px calc(78px + env(safe-area-inset-bottom))}
 }
-@media(max-width:380px){.canvas.mobile .facts,.canvas.mobile .compare-grid{grid-template-columns:1fr}.canvas.mobile .button-row,.dialog .button-row{display:grid;grid-template-columns:1fr}.canvas.mobile .button-row>*{width:100%}}
+@media(max-width:380px){.canvas.mobile .facts,.canvas.mobile .compare-grid,.canvas.mobile .decision-grid{grid-template-columns:1fr}.canvas.mobile .button-row,.dialog .button-row{display:grid;grid-template-columns:1fr}.canvas.mobile .button-row>*{width:100%}.unknown-row{align-items:flex-start;flex-direction:column;gap:6px}}
 @media print{.topbar,.intro,.variant-head,footer{display:none!important}.workspace{padding:0}.variant{display:block!important;page-break-after:always}.canvas{width:1100px!important;box-shadow:none;border:1px solid #999}.canvas-wrap{overflow:visible}.modal{display:none!important}}
 </style>
 </head>
@@ -44,21 +46,55 @@ footer{max-width:1400px;margin:18px auto 0;color:#5f6b67;font-size:12px;text-ali
 <div class="shell">
   <header class="topbar"><div class="toprow">
     <div class="brand"><span>🐾</span> DOG Listing Presentation</div>
-    <nav class="tabs" aria-label="Wireframe direction">
-      <button class="active" data-variant="v1">Trust-first</button>
-      <button data-variant="v2">Booking-first</button>
-      <button data-variant="v3">Comparison-first</button>
+    <nav class="tabs" aria-label="Wireframe direction" role="tablist">
+      <button class="active" id="tab-v4" role="tab" aria-selected="true" aria-controls="v4" data-variant="v4">Recommended</button>
+      <button id="tab-v1" role="tab" aria-selected="false" aria-controls="v1" tabindex="-1" data-variant="v1">Trust-first</button>
+      <button id="tab-v2" role="tab" aria-selected="false" aria-controls="v2" tabindex="-1" data-variant="v2">Booking-first</button>
+      <button id="tab-v3" role="tab" aria-selected="false" aria-controls="v3" tabindex="-1" data-variant="v3">Comparison-first</button>
     </nav>
     <div class="view-toggle"><button class="active" data-view="desktop">Desktop</button><button data-view="mobile">Mobile</button></div>
     <div class="topnote">Interactive wireframe • click correction, claim, and evidence controls</div>
   </div></header>
   <main class="workspace">
     <section class="intro">
-      <div><h1>Three listing-page directions</h1><p>All states are evidence-aware: verified, source-backed, and unknown values are visually distinct. No decorative checkmarks with a creative-writing degree.</p></div>
+      <div><h1>Four listing-page directions</h1><p>The recommended version combines trust, decision utility, and verified handoff patterns from the pages ranking now. All unknowns remain explicit; the database has not achieved enlightenment.</p></div>
       <div class="legend"><span class="pill verified">✓ Verified</span><span class="pill source">◉ Source-backed</span><span class="pill unknown">— Not confirmed</span><span class="pill attention">! Needs review</span></div>
     </section>
 
-    <section class="variant active" id="v1">
+    <section class="variant active" id="v4" role="tabpanel" aria-labelledby="tab-v4">
+      <div class="variant-head"><div><h2>Verified decision page</h2><p>Recommended after ranking-page research. Trust establishes the record, normalized evidence answers the decision, and persistent actions hand the user to the provider without pretending DOG owns booking.</p></div><div class="stance"><strong>Best at</strong>Evidence-led decisions with conversion still in reach.<br><strong>Built from</strong>Trust-first spine + Comparison-first scan + Booking-first handoff.</div></div>
+      <div class="canvas-wrap"><div class="canvas v4">
+        <div class="site-head"><div class="site-logo">🐾 Dogs Mobile Grooming</div><div class="search">⌖ ZIP or city…</div><div class="guide">Guides</div></div>
+        <div class="breadcrumb">Home › Florida › Cape Coral › A Dog’s World</div>
+        <div class="page">
+          <div class="decision-hero card">
+            <div class="photo"><div class="dog">🐩</div><div class="photo-label">Business website photo</div></div>
+            <div class="decision-summary"><span class="pill verified">Recommended direction</span><h1>A Dog’s World</h1><p>Mobile groomer in Cape Coral, Florida</p><div class="rating"><span class="stars">★★★★★</span><b>4.5</b><span>33 Google reviews • observed Aug 12, 2026</span></div><div class="decision-meta"><span class="pill source">◉ Public sources checked</span><span class="pill unknown">Owner confirmation pending</span></div><div class="button-row"><button class="primary">Call groomer</button><button class="secondary">Visit provider website</button></div><div class="research-note"><strong>Neutral handoff:</strong> DOG does not process this booking. Confirm price, coverage, and availability directly with the provider.</div></div>
+          </div>
+          <div class="decision-grid" aria-label="Key decision facts">
+            <div class="decision-card"><div class="decision-status">Source-backed</div><div class="decision-value">Mobile grooming</div><div class="decision-evidence">Service model • business website</div></div>
+            <div class="decision-card"><div class="decision-status">Source-backed</div><div class="decision-value">Cape Coral + Fort Myers</div><div class="decision-evidence">Published service area</div></div>
+            <div class="decision-card"><div class="decision-status">Source-backed</div><div class="decision-value">Dogs + cats</div><div class="decision-evidence">Pet types • business website</div></div>
+            <div class="decision-card unknown-card"><div class="decision-status">Not confirmed</div><div class="decision-value">Starting price</div><div class="decision-evidence">No reliable published basis</div></div>
+            <div class="decision-card unknown-card"><div class="decision-status">Not confirmed</div><div class="decision-value">Online booking</div><div class="decision-evidence">Website available; booking route unverified</div></div>
+            <div class="decision-card unknown-card"><div class="decision-status">Not confirmed</div><div class="decision-value">Insurance + credentials</div><div class="decision-evidence">Ask the provider directly</div></div>
+          </div>
+          <div class="decision-layout">
+            <div class="maincol">
+              <div class="section card"><h3>Services found on the business website</h3><div class="service-grid"><div class="service"><strong>Full-service groom</strong><small><span class="pill source">Source-backed</span> Bath, coat care, haircut, nails, ears</small></div><div class="service"><strong>De-shedding bath</strong><small><span class="pill source">Source-backed</span> Deep cleanse, conditioner, comb-out</small></div><div class="service"><strong>Medicated shampoo</strong><small><span class="pill source">Source-backed</span> Sensitive-skin option described</small></div><div class="service"><strong>Cat grooming</strong><small><span class="pill source">Source-backed</span> Listed by the business</small></div></div><p class="tiny">Service inclusion does not confirm current availability, suitability for a particular pet, or a final price.</p></div>
+              <div class="section card"><h3>What we could not confirm</h3><div class="unknown-list"><div class="unknown-row"><span>Starting price or quote rule</span><span class="pill unknown">Not confirmed</span></div><div class="unknown-row"><span>Large-dog policy</span><span class="pill unknown">Not confirmed</span></div><div class="unknown-row"><span>Senior or anxious-pet accommodations</span><span class="pill unknown">Not confirmed</span></div><div class="unknown-row"><span>Insurance and professional credentials</span><span class="pill unknown">Not confirmed</span></div></div><p class="tiny">Unknown means DOG did not locate reliable support. It does not mean “No.”</p></div>
+              <div class="section card"><h3>Nearby alternatives</h3><p>Use the same evidence states across listings so users can compare without converting missing data into a negative claim.</p><div class="alternative-list"><div class="alternative"><span class="pill source">Illustrative comparison</span><h4>Nearby listing A</h4><p><strong>Published price:</strong> Source-backed</p><p><strong>Cats:</strong> Not confirmed</p></div><div class="alternative"><span class="pill source">Illustrative comparison</span><h4>Nearby listing B</h4><p><strong>Published price:</strong> Not confirmed</p><p><strong>Cats:</strong> Provider-stated</p></div></div></div>
+              <div class="section card provenance"><h3>How we know</h3><div class="provenance-grid"><div class="proof"><strong>Last material check</strong><span>August 12, 2026</span></div><div class="proof"><strong>Sources used</strong><span>Business website + Google Business Profile</span></div><div class="proof"><strong>Owner status</strong><span>Owner confirmation pending</span></div></div><p class="tiny">A source check only supports the cited field at the observed date. It does not certify quality, availability, licensing, insurance, or every detail on the listing.</p><button class="inline-action" data-modal="evidence">View field-level evidence →</button></div>
+              <div class="section card"><h3>Something inaccurate?</h3><p>Corrections enter review; they do not become verified or publish immediately. Claiming is free and does not affect rankings.</p><div class="button-row"><button class="secondary" data-modal="correct">Report a correction</button><button class="linkbtn" data-modal="claim">Claim this listing</button></div></div>
+            </div>
+            <aside class="side mobile-hide"><div class="sticky card booking"><span class="pill source">Verified handoff</span><h3>Contact the provider</h3><div class="book-row"><div class="label">Phone • source checked</div><div class="value">(239) 940-7199</div><button class="primary">Call groomer</button></div><div class="book-row"><div class="label">Provider website • source checked</div><button class="secondary">Check availability on provider site</button></div><div class="book-row"><div class="label">Before booking</div><div class="tiny">Confirm the service area, pet fit, price, and current availability directly.</div></div><button class="linkbtn" data-modal="correct">Report incorrect details</button></div></aside>
+          </div>
+        </div>
+        <div class="mobile-rail"><button class="secondary">Provider site</button><button class="primary">Call groomer</button></div>
+      </div></div>
+    </section>
+
+    <section class="variant" id="v1" role="tabpanel" aria-labelledby="tab-v1">
       <div class="variant-head"><div><h2>Trust-first marketplace</h2><p>Recommended foundation. Establishes why the listing is credible before asking the user to call or book, while preserving a sticky conversion rail.</p></div><div class="stance"><strong>Best at</strong>Balancing neutral-directory trust, scanability, and conversion.<br><strong>Trade-off</strong>Requires the strongest provenance data discipline.</div></div>
       <div class="canvas-wrap"><div class="canvas v1">
         <div class="site-head"><div class="site-logo">🐾 Dogs Mobile Grooming</div><div class="search">⌖ ZIP or city…</div><div class="guide">Guides</div></div>
@@ -81,7 +117,7 @@ footer{max-width:1400px;margin:18px auto 0;color:#5f6b67;font-size:12px;text-ali
       </div></div>
     </section>
 
-    <section class="variant" id="v2">
+    <section class="variant" id="v2" role="tabpanel" aria-labelledby="tab-v2">
       <div class="variant-head"><div><h2>Booking-first concierge</h2><p>Moves contact actions into the hero and keeps the qualification story compact. Strongest when DOG wants to maximize calls without pretending to own the booking transaction.</p></div><div class="stance"><strong>Best at</strong>Fast mobile action and low-friction contact.<br><strong>Trade-off</strong>Trust evidence can become secondary if content is sparse.</div></div>
       <div class="canvas-wrap"><div class="canvas v2">
         <div class="site-head"><div class="site-logo">🐾 Dogs Mobile Grooming</div><div class="search">⌖ ZIP or city…</div><div class="guide">Guides</div></div>
@@ -103,7 +139,7 @@ footer{max-width:1400px;margin:18px auto 0;color:#5f6b67;font-size:12px;text-ali
       </div></div>
     </section>
 
-    <section class="variant" id="v3">
+    <section class="variant" id="v3" role="tabpanel" aria-labelledby="tab-v3">
       <div class="variant-head"><div><h2>Comparison-first directory</h2><p>Leans into DOG’s neutral-comparison moat. Structured attributes lead; narrative content follows. Unknowns stay visible so absence of evidence never masquerades as “No.”</p></div><div class="stance"><strong>Best at</strong>Qualified decisions and future city-page comparison reuse.<br><strong>Trade-off</strong>Can feel clinical and data-heavy for casual visitors.</div></div>
       <div class="canvas-wrap"><div class="canvas v3">
         <div class="site-head"><div class="site-logo">🐾 Dogs Mobile Grooming</div><div class="search">⌖ ZIP or city…</div><div class="guide">Guides</div></div>
@@ -135,7 +171,26 @@ footer{max-width:1400px;margin:18px auto 0;color:#5f6b67;font-size:12px;text-ali
 <script>
 const tabs=[...document.querySelectorAll('[data-variant]')];
 const variants=[...document.querySelectorAll('.variant')];
-tabs.forEach(b=>b.addEventListener('click',()=>{tabs.forEach(x=>x.classList.remove('active'));b.classList.add('active');variants.forEach(v=>v.classList.toggle('active',v.id===b.dataset.variant));window.scrollTo({top:0,behavior:'smooth'});}));
+function activateVariant(button,moveFocus=false){
+  tabs.forEach(x=>{
+    const active=x===button;
+    x.classList.toggle('active',active);
+    x.setAttribute('aria-selected',String(active));
+    x.tabIndex=active?0:-1;
+  });
+  variants.forEach(variant=>variant.classList.toggle('active',variant.id===button.dataset.variant));
+  if(moveFocus)button.focus();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+tabs.forEach((button,index)=>{
+  button.addEventListener('click',()=>activateVariant(button));
+  button.addEventListener('keydown',event=>{
+    if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;
+    event.preventDefault();
+    const next=event.key==='Home'?0:event.key==='End'?tabs.length-1:(index+(event.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length;
+    activateVariant(tabs[next],true);
+  });
+});
 const viewButtons=[...document.querySelectorAll('[data-view]')];
 const mobileViewport=window.matchMedia('(max-width:760px)');
 function setView(view){
